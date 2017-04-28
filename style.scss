@@ -1,0 +1,83 @@
+$body-font: 'Anonymous Pro', serif;
+$header-font: 'Karla', sans-serif;
+
+body {
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/a4/47/ad/a447ad5656535409d27196872ece7dc7.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Helvetica", Times, serif;
+  margin: 25px;
+  h1 {
+    font-weight: 700;
+  }
+}
+
+.wikiGlobe {
+  height: 150px;
+  width: 155px;
+  background: url("https://upload.wikimedia.org/wikipedia/en/b/bc/Wiki.png");
+  background-repeat: no-repeat;
+  margin: 0 auto;
+  margin-bottom: 2.5%;
+}
+
+.well {
+  border: solid;
+  border-radius: 10px;
+  border-width: 2.5px;
+  border-color: white;
+  background-color: rgba(212,101,57, 0.8);
+  font-family: $header-font;
+}
+.random {
+  font-weight: 700;
+  margin-top: 30px;
+  @media (min-width: 768px) {
+    margin-top: 0;
+  }
+}
+.results > div {
+  display: none;
+}
+#result-count {
+  h3 {
+    font-family: $header-font;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+.results a {
+  color: #ff8c00;
+  text-shadow: 1px 1px black;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  &:hover, &:focus {
+    color: #94C7B6;
+    .entry, .entry.odd {
+      background-color: rgba(8,8,8,0.8);
+    }
+  }
+  .entry {
+    background-color: rgba(64,59,51, 0.8);
+    border-radius: 4px;
+    margin-bottom: 5px;
+    padding: 20px;
+    transition: background-color 0.2s ease-in-out;
+    &.odd {
+      background-color: rgba(152,143,134,0.8);
+    }
+    h2 {
+      font-family: $header-font;
+      font-size: 2.4em;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    p {
+      margin-top: 10px;
+      margin-bottom: 0;
+      font-family: $body-font;
+      font-size: 1.3em;
+    } 
+  }
+}
